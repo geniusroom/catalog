@@ -1,0 +1,28 @@
+openapi: 3.0.3
+
+info:
+  title: Classical Music Catalog API
+  version: 0.1.0
+
+tags:
+  - name: composers
+    description: Endpoints for managing composers
+  - name: works
+    description: Endpoints for managing musical works
+  - name: performers
+    description: Endpoints for managing performers
+  - name: recordings
+    description: Endpoints for managing recordings
+
+paths:
+  $ref: './composers.yaml#/paths'
+  # $ref: './works.yaml#/paths'
+  # $ref: './performers.yaml#/paths'
+  # $ref: './recordings.yaml#/paths'
+
+components:
+  schemas:
+    $ref: './composers.yaml#/components/schemas'
+    # $ref: './works.yaml#/components/schemas'
+    # $ref: './performers.yaml#/components/schemas'
+    # $ref: './recordings.yaml#/components/schemas'
