@@ -1,12 +1,13 @@
 package main
 
 import (
-	"fmt"
-
 	"github.com/geniusroom/catalog/internal/config"
+	"github.com/geniusroom/catalog/internal/logger"
 )
 
 func main() {
 	cfg := config.GetDefault()
-	fmt.Printf("%+v", cfg)
+	log := logger.New(cfg)
+
+	_ = log
 }
